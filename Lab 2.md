@@ -47,7 +47,7 @@ sudo apt install git -y
 ```
 Clone the existing directory
 ```
-git clone https://github.com/Mehar-Nafis/DevOps-Training-Hello-World-App.git
+git clone repo url
 ```
 ```
 cd DevOps-Training-Hello-World-App/
@@ -58,10 +58,10 @@ git init .
 To set the `User Identity` ie... `email and user name.` you can execute below commands:
 
 ```
-git config --global user.email meharnafis@gmail.com
+git config --global user.email youremail
 ```
 ```
-git config --global user.name mehar
+git config --global user.name yourname
 ```
 ```
 git status
@@ -95,7 +95,7 @@ Currently, our Code is in Local Repository.
 ```
 git remote add new-repo <Replace your Repository URL> 
 ```
-(**Example:** `git remote add new-repo https://github.com/meharnafis/hello-world.git`)
+(**Example:** `git remote add new-repo https://github.com/komal/hello-world.git`)
 
 2. To view a specific alias use the below command.
 ```
