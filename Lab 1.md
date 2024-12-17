@@ -219,7 +219,7 @@ variable "ins_type" {
 
 # Replace 'yourname' with your first name
 variable key_name {
-    default = "Mehar-Jenkins-Docker-KeyPair"
+    default = "Yourname-Jenkins-Docker-KeyPair"
 }
 
 variable public_key {
@@ -228,7 +228,7 @@ variable public_key {
 
 variable "my-servers" {
   type    = list(string)
-  default = ["Mehar-Jenkins-Server", "Mehar-Docker-Server"]
+  default = ["Yourname-Jenkins-Server", "Yourname-Docker-Server"]
 }
 ```
 Now, execute the terraform commands to launch the new servers
@@ -302,11 +302,12 @@ Now, Create a playbook, which will deploy packages onto the `Docker-server` and 
 vi main.yaml
 ```
 Copy and paste the below code and save it.
+Ensure to edit the machine name.
 ```
 ---
 
 - name: Start installing Jenkins pre-requisites before installing Jenkins
-  hosts: Mehar-Jenkins-Server
+  hosts: Yourname-Jenkins-Server
   become: yes
   become_method: sudo
   gather_facts: no
@@ -359,7 +360,7 @@ Copy and paste the below code and save it.
 
 
 - name: Start the Docker installation steps
-  hosts: Mehar-Docker-Server
+  hosts: Yourname-Docker-Server
   become: yes
   become_method: sudo
   gather_facts: no
