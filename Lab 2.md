@@ -47,10 +47,10 @@ sudo apt install git -y
 ```
 Clone the existing directory
 ```
-git clone repo url
+git clone <githubURL>
 ```
 ```
-cd DevOps-Training-Hello-World-App/
+cd hello-world/
 ```
 ```
 git init .
