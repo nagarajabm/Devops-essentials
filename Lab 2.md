@@ -45,12 +45,20 @@ git --version
 ```
 sudo apt install git -y
 ```
-Clone the existing directory
+Download the Java Code that we are going to use in the CICD pipeline.
 ```
-git clone <githubURL>
+wget https://hsbctraining.s3.us-east-2.amazonaws.com/hello-world-master.zip
 ```
 ```
-cd hello-world/
+unzip hello-world-master.zip
+```
+```
+ls
+rm hello-world-master.zip
+```
+```
+cd hello-world-master
+ls
 ```
 ```
 git init .
@@ -165,6 +173,33 @@ git log
 Pushing the same file from `Local Repository` to Remote Repository
 ```
 git push new-repo dev
+```
+```
+git branch
+```
+```
+git branch prod
+```
+```
+git checkout prod
+```
+```
+git branch
+```
+```
+git merge dev
+```
+```
+git push origin prod
+```
+```
+git checkout master
+```
+```
+git merge prod
+```
+```
+git push origin master
 ```
 
 
