@@ -1,6 +1,6 @@
 ## Clean Up
 
-Login to the JumpServer and navivate to the eblwo directory
+Login to the JumpServer and navigate to the below directory
 ```
 cd ~ && cd devops-labs
 ```
@@ -14,4 +14,4 @@ Now exit from the Jump Server
 ```
 exit
 ```
-Now naviaget to your AWS Managment Console and manulally terminate your JumpServer.
+Now navigate to your AWS Managment Console and manually terminate your JumpServer.
