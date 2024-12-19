@@ -74,12 +74,6 @@ git config --global user.name yourname
 ```
 git status
 ```
-```
-echo "Hello World" > file1.txt
-```
-```
-git status
-```
 Move the code from `Working Directory` to `Staging Area (Index)`
 ```
 git add .
