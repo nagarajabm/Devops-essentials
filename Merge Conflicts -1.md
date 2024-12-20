@@ -37,7 +37,7 @@ git commit -m "Added line 4 in feature-branch"
 ## 5. Switch Back to main Branch:
 
 ```bash
-git checkout main
+git checkout master
 ```
 
 ## 6. Modify the Same File in main:
