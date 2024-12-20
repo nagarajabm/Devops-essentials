@@ -184,7 +184,7 @@ git branch
 git merge dev
 ```
 ```
-git push origin prod
+git push new-repo prod
 ```
 ```
 git checkout master
@@ -193,7 +193,7 @@ git checkout master
 git merge prod
 ```
 ```
-git push origin master
+git push new-repo master
 ```
 
 
