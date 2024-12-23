@@ -1,5 +1,26 @@
 ## Configuring `Docker Machine` as Jenkins Slave, build and deploy code in Docker Host as a container
 
+## Task-0: Configuring Key pair.
+SSH into docker-server
+Change to the root user
+```
+sudo su
+```
+Generate a key-pair
+```
+ssh-keygen
+```
+Add the public key to the authorized_keys
+```
+cat /root/.ssh/id_ed25519.pub
+```
+Copy the contents of the file and append in authorized_keys
+```
+vi /root/.ssh/authorized_keys
+```
+Save the file using ESCAPE+:wq!
+
+
 ### Task-1: Configuring Docker Machine as Jenkins Slave.
 
 1. In Jenkins Webpage, Navigate to **Jenkin's Dashboard** and click on the **Manage Jenkins** and **Nodes**.
@@ -12,12 +33,13 @@
    * Launch method to be set as **"launch agents via SSH"**.
    * In the host section, give the **Public IP of the Docker instance**.
    * For Credentials for this Docker node, click on the dropdown button named **Add** and then click on **Jenkins**
-   * Then in the next window, in kind select **SSH username with private key** (Give username as `ubuntu`)
+   * Then in the next window, in kind select **SSH username with private key** (Give username as `root`)
    * In **Private Key** Select **Enter directly**
    
-   **Note:** To get the `Private Key` go to `Jenkins Server` and Execute the below command:
+   **Note:** To get the `Private Key` go to `Docker-server` and Execute the below command:
       ```
-      cat /home/ubuntu/.ssh/id_rsa
+      cd /root/.ssh
+      cat id_ed25519
       ```
      (Copy the entire content of the Private Key, including the **First and Last line** till `5 hyphens` only.)
      
