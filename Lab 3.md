@@ -145,7 +145,7 @@ Now, Stop tomcat10 and remove it. Otherwise, it will slow down the Jenkins serve
 sudo service tomcat10 stop
 ```
 ```
-sudo apt remove tomcat10 -y
+sudo apt remove tomcat9 -y
 ```
 Summary:
 
